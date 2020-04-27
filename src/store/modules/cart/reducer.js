@@ -1,0 +1,24 @@
+import produce from 'immer'
+import {INITIAL_CART, ADD_TO_CART} from '../../../constants/Cart'
+
+export default function cart (state = INITIAL_CART, action) {
+    switch (action.type) {
+        case ADD_TO_CART:
+            return produce(state, draft => {
+                const productIndex = draft.findIndex(
+                    p => p.id === action.product.id
+                )
+                if (productIndex >= 0) {
+                    draft[productIndex].amount += 1
+                } else {
+                    draft.push({
+                        ...action.product,
+                        amount: 1,
+                    });
+                }
+            })
+
+        default:
+            return state
+    }
+}
