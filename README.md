@@ -1,7 +1,7 @@
 
 # Rocketshoes
 <h1 align="center" >
-  <img src="/readme-assets/img-demo.png" width="600"/>
+  <img src="/readme-assets/img-demo.jpeg" width="500"/>
 </h1>
 
 Projeto usando ReactJS para exemplificar o uso de Redux.
