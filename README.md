@@ -6,6 +6,8 @@
 
 Projeto usando ReactJS para exemplificar o uso de Redux.
 
+-  [Demo](https://roket-shoes.web.app)
+
 Para iniciar o "banco de dados" do projeto instale o json-server.
 https://github.com/typicode/json-server
 
